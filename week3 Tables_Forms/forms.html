@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Good-vibes</title>
+  </head>
+  <body>
+    <div>
+      <h1>Good Vibes Form</h1>
+    </div>
+    <!--Master-div-style is the big centered grey container, every thing is inside here-->
+    <div class="master-div-style" id="master-div-style">
+      <p>
+        <em><strong>Tell us something positive that happened to you</strong></em>
+      </p>
+      <!--FIELDS MANAGE, the form has been matched with a table to make the texts and the boxes better aligned, the labels are at the left side<th> and the boxes are a the right side<td> -->
+      <div class="fields" id="fields">
+        <form action="Result.HTML" method="get">
+          <table>
+            <!--Name-->
+            <tr>
+              <th>
+                <label for="name"><p>Name</p></label>
+              </th>
+              <td>
+                <input type="text" name="Name" id="name" class="input-fields" placeholder="Enter your name" required/>
+              </td>
+            </tr>
+            <!--Email-->
+            <tr>
+              <th>
+                <label for="email"><p>Email</p></label>
+              </th>
+              <td>
+                <input
+                  type="email"
+                  name="email"
+                  id="Email"
+                  class="input-fields"
+                  placeholder="Enter your email address"
+                  required
+                />
+              </td>
+            </tr>
+            <!--date-->
+            <tr>
+              <th>
+                <label for="date"><p>what date did it happen?</p></label>
+              </th>
+              <td>
+                <input type="date" id="date" class="input-fields">
+              </td>
+            </tr>
+            <!--scale 1 to 10-->
+            <tr>
+              <th>
+                <label for="scale"
+                  ><p>On a scale of 1-10,how good was it?</p></label
+                >
+              </th>
+              <td>
+                <input
+                  type="number"
+                  name="scale"
+                  id="scale"
+                  class="input-fields"
+                  max="10"
+                  min="1"
+                  placeholder="enter a number between 1 and 10"
+                />
+              </td>
+            </tr>
+            <!--select-->
+            <tr>
+              <th>
+                <label for="where-did-it-happened"
+                  ><p>Where did it happen?</p></label
+                >
+              </th>
+              <td>
+                <select
+                  name="where-did-it-happened"
+                  id="where-did-it-happened"
+                  class="dropdown"
+                >
+                  <option value="Home">At home</option>
+                  <option value="Work">At work</option>
+                  <option value="Somewhere-else">Somewhere else</option>
+                </select>
+              </td>
+            </tr>
+            <!--radiobox-->
+            <tr>
+              <th>
+                <label for="what-time"
+                  ><p>At what time of day did it happen</p>
+                </label>
+              </th>
+              <td>
+                <div id="radio">
+                  <div class="my-div">
+                    <input
+                      type="radio"
+                      id="Morning"
+                      name="fav_language"
+                      value="Morning"
+                    />
+                    <label for="Morning" class="my-label">Morning</label><br />
+                  </div>
+                  <div class="my-div">
+                    <input
+                      type="radio"
+                      id="Afternoon"
+                      name="fav_language"
+                      value="Afternoon"
+                    />
+                    <label for="Afternoon" class="my-label">Afternoon</label
+                    ><br />
+                  </div>
+                  <div class="my-div">
+                    <input
+                      type="radio"
+                      id="Evening"
+                      name="fav_language"
+                      value="Evening"
+                    />
+                    <label for="Evening" class="my-label">Evening</label>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <!--checkbox-->
+            <tr>
+              <th>
+                <label for="where-did-it-happened"
+                  ><p>
+                    What emotions did you experienced<br />(Select all that
+                    apply)
+                  </p></label
+                >
+              </th>
+              <!--every checkbox is inside a styled div together with his own label-->
+              <td>
+                <br />
+                <div id="checkbox">
+                  <div class="my-div">
+                    <input
+                      class="my-checkbox"
+                      type="checkbox"
+                      id="Excited"
+                      name="Excited"
+                      value="Bike"
+                    />
+                    <label for="Excited" class="my-label">Excited</label>
+                    <br />
+                  </div>
+
+                  <div class="my-div">
+                    <input
+                      class="my-checkbox"
+                      type="checkbox"
+                      id="Humbled"
+                      name="Humbled"
+                      value="Humbled"
+                    />
+                    <label for="Humbled" class="my-label">Humbled</label>
+                    <br />
+                  </div>
+
+                  <div class="my-div">
+                    <input
+                      class="my-checkbox"
+                      type="checkbox"
+                      id="Loved"
+                      name="Loved"
+                      value="Loved"
+                    />
+                    <label for="Loved" class="my-label">Loved</label>
+                    <br />
+                  </div>
+
+                  <div class="my-div">
+                    <input
+                      class="my-checkbox"
+                      type="checkbox"
+                      id="Elated"
+                      name="Elated"
+                      value="Elated"
+                    />
+                    <label for="Elated" class="my-label">Elated</label>
+                    <br />
+                  </div>
+
+                  <div class="my-div">
+                    <input
+                      class="my-checkbox"
+                      type="checkbox"
+                      id="Enthusiastic"
+                      name="Enthusiastic"
+                      value="Enthusiastic"
+                    />
+                    <label for="Enthusiastic" class="my-label"
+                      >Enthusiastic</label
+                    >
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <!--textarea-->
+            <tr>
+              <th>
+                <label for="Experience"
+                  ><p>Please describe your positive experience</p></label
+                >
+              </th>
+              <td>
+                <textarea
+                  id="Experience"
+                  name="Experience"
+                  rows="3"
+                  cols="40"
+                  placeholder="Enter your experience here..."
+                  style="resize: none; margin-left: 10px"
+                ></textarea>
+              </td>
+            </tr>
+            <!--buttons management-->
+            <tr>
+              <th>
+                <div id="button">
+                  <input type="submit" id="submit" class="submit" />
+                </div>
+              </th>
+              <td>
+                <div id="reset" >
+                  <input type="reset" id="reset" class="reset" />
+                </div>
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

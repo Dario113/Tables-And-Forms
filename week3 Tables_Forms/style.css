@@ -1,0 +1,174 @@
+body {
+    text-align: center;
+    background-color: #a9d7e9;
+  }
+  
+  h1 {
+    font-size: 48px;
+  }
+  
+  p {
+    font-size: 17px;
+  }
+  
+  th {
+    border:1px #6ba2ce;
+    height: 10px;
+    width: 1000px;
+  }
+  
+  table {
+    text-align: right;
+    margin: 5px auto;
+  }
+  
+
+  .form-rows {
+    position: static;
+    display: block;
+  }
+  
+  .master-div-style {
+    margin: auto;
+    width: 1300px;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    padding: 20px 10px 10px 10px;
+  }
+  
+  .fields {
+    display: inline-block;
+    text-align: left;
+    width: 48%;
+    vertical-align: middle;
+  }
+  .label {
+    display: inline-block;
+    text-align: right;
+    width: 40%;
+    padding: 5px;
+    vertical-align: top;
+    margin-top: 10px;
+  }
+
+  .my-label {
+    
+    display: inline-block;
+    text-align: left;
+    width: 90px;
+    margin: 5px;
+    
+  }
+
+  .my-div{
+    display: flex;
+    object-position: left;
+  }
+
+  .my-checkbox{
+    margin: 5px;
+    margin-left: 10;
+  }
+  
+  .input-fields {
+    height: 20px;
+    width: 280px;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+  }
+  
+  .dropdown {
+    height: 35px;
+    width: 140px;
+    padding: 5px;
+    margin: 15px 10px 10px 10px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .radio {
+    position: relative;
+    left: -43px;
+    margin-left: 10px;
+    display: block;
+    padding-bottom: 10px;
+  }
+  
+  .user-selection {
+    float: left;
+    margin-right: 5px;
+    display: block;
+    align-items: flex-start;
+  }
+  
+  .submit {
+    font-size: 1em;
+    background-color: blue;
+    color: white;
+    border: 0px solid;
+    border-radius: 4px;
+    height: 40px;
+    width: 80px;
+    margin: 10px;
+  }
+
+  .reset {
+    font-size: 1em;
+    background-color: blue;
+    color: white;
+    border: 0px solid;
+    border-radius: 4px;
+    height: 40px;
+    width: 80px;
+    margin: 10px;
+    margin-right: 250px;
+  }
+  
+  @media (max-width: 833px) {
+    .master-div-style {
+      width: 70%;
+    }
+  
+    .fields {
+      display: inline-block;
+      text-align: left;
+      width: 48%;
+      vertical-align: middle;
+    }
+  
+    .input-fields {
+      width: 80%;
+    }
+  
+    .dropdown {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 520px) {
+    .master-div-style {
+      width: 80%;
+    }
+  
+    .fields {
+      width: 80%;
+      float: left;
+    }
+    .labels {
+      width: 100%;
+      text-align: left;
+    }
+  
+    .input-fields {
+      width: 100%;
+    }
+  
+    .dropdown {
+      width: 100%;
+    }
+  }
+  
